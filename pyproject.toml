@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "kafka-example"
+version = "0.1.0"
+description = ""
+authors = ["Nursultan Kudaibergenov <aka.tworedz@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiokafka = "^0.8.0"
+faust-streaming = "^0.10.5"
+pydantic = "^1.10.6"
+aioredis = "^2.0.1"
+fastapi = "^0.95.0"
+uvicorn = "^0.21.1"
+orjson = "^3.8.8"
+httpx = "^0.23.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+isort = "^5.12.0"
+ruff = "^0.0.257"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
